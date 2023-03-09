@@ -1,0 +1,19 @@
+{
+    "users":[
+        {
+            "id":1,
+            "name":"tejas",
+            "mobile":"7218263515",
+            "email":"tejasjadhav1612@gmail.com",
+            "city":"pune",
+            "gender":"male"
+        }
+    ],
+    "posts":[
+        {
+            "id":1,
+            "title":"aaaa",
+            "body":"ahaj akjakj ajkmdkm "
+        }
+    ]
+}
