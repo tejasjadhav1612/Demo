@@ -1,9 +1,16 @@
 import axios from 'axios';
 import MUIDataTable from 'mui-datatables';
 import React, { useEffect, useState } from 'react';
+import AddEditUser from './AddEditUser';
+import Button from "@mui/material/Button";
 
 const UserList = () => {
     const [users, setUsers] = useState([]);
+    const [openDialog, setOpenDialog] = useState(false);
+
+    const handleClose = ()=>{
+        setOpenDialog(false);
+    }
 
     useEffect(()=>{
         axios
@@ -63,9 +70,14 @@ const UserList = () => {
         },
         
     ];
+
+    const addUser = () =>{
+        setOpenDialog(true);
+    };
     return ( 
         <>
-        
+        <AddEditUser open={openDialog} handleClose={handleClose}/>
+        <Button onClick={addUser}>New +</Button>
         <MUIDataTable title="User List" data={users} columns={columns}/>
         </>
      );

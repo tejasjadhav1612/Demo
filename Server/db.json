@@ -1,19 +1,35 @@
 {
-    "users":[
-        {
-            "id":1,
-            "name":"tejas",
-            "mobile":"7218263515",
-            "email":"tejasjadhav1612@gmail.com",
-            "city":"pune",
-            "gender":"male"
-        }
-    ],
-    "posts":[
-        {
-            "id":1,
-            "title":"aaaa",
-            "body":"ahaj akjakj ajkmdkm "
-        }
-    ]
+  "users": [
+    {
+      "id": 1,
+      "name": "tejas",
+      "mobile": "7218263515",
+      "email": "tejasjadhav1612@gmail.com",
+      "city": "pune",
+      "gender": "male"
+    },
+    {
+      "name": "tejas jadhav",
+      "mobile": "72183515",
+      "email": "tejasjadhab1612@gmail.com",
+      "gender": "",
+      "city": "pune",
+      "id": 2
+    },
+    {
+      "name": "tejas jadhav",
+      "mobile": "72183515",
+      "email": "tejasjadhab1612@gmail.com",
+      "gender": "",
+      "city": "pune",
+      "id": 3
+    }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "aaaa",
+      "body": "ahaj akjakj ajkmdkm "
+    }
+  ]
 }
