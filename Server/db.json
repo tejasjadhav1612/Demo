@@ -23,6 +23,14 @@
       "gender": "",
       "city": "pune",
       "id": 3
+    },
+    {
+      "name": "tejasjadhav",
+      "mobile": "7218263515",
+      "email": "tejasjadhav1612@gmail.com",
+      "gender": "male",
+      "city": "pune",
+      "id": 4
     }
   ],
   "posts": [
