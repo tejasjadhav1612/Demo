@@ -8,7 +8,10 @@ import RadioGroup from '@mui/material/RadioGroup';
 import FormControlLabel from '@mui/material/FormControlLabel';
 import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
+import { useContext } from 'react';
+import UserContext from './UserContext';
 const UserForm = () => {
+    const {loadUsers, handleClose} = useContext(UserContext);
     const [user, setUser] = useState({
         name: "",
         mobile: "",
@@ -26,6 +29,8 @@ const UserForm = () => {
                 .post("http://localhost:8080/users", user)
                 .then((response) => {
                     alert("User created...");
+                    loadUsers();
+                    handleClose();
                 })
                 .catch((err) => {
                     console.log(err);
